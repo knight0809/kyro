@@ -55,7 +55,7 @@ h3 {
 }
 
 p {
-  margin: 0;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,7 +84,7 @@ a {
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
-  font-size: rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -107,8 +107,9 @@ a {
 /* Badges */
 .badge {
   border-radius: 20px;
-  padding: 0.5rem 2rem;
+  font-size: 2rem;
   font-weight: 600;
+  padding: 0.5rem 2rem;
   white-space: nowrap;
 }
 
@@ -129,7 +130,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .badge {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .badge--small {
@@ -145,7 +146,7 @@ a {
 
 .list--inline .list__item {
   display: inline-block;
-  margin: 2rem;
+  margin-right: 2rem;
 }
 
 .list--tick {
@@ -235,7 +236,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #00c8eb;
+  background: #05cdf0;
 }
 
 .btn--accent {
@@ -501,15 +502,16 @@ a {
   }
 }
 
-/* Testimonial */
+/* Testimonials */
 .testimonial {
   padding: 3rem;
-  overflow: visible;
 }
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
+
 .testimonial__image > img {
   width: 100%;
 }
@@ -521,6 +523,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
@@ -528,6 +534,7 @@ a {
 
   .testimonial .quote {
     margin-left: 6rem;
+    margin-right: 0;
   }
 }
 
@@ -612,6 +619,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -738,7 +746,7 @@ a {
   max-width: 670px;
 }
 
-.domain-block__prices {
+.block-domain__prices {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -750,7 +758,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .domain-block__prices {
+  .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
@@ -789,7 +797,7 @@ a {
   }
 }
 
-/* Showcare Block */
+/* Showcase Block */
 .block-showcase__image > img {
   width: 100%;
 }
